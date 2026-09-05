@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Frugt i Odense og omegn</title>
+<meta name="description" content="Kort over frugttræer og spiselige planter på offentligt tilgængelige arealer i Odense og omegn.">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#8f2d1e">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='27' font-size='27'>%F0%9F%8D%8E</text></svg>">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"
+      integrity="sha256-tXCrvaljxgtN5LT/Syb5Mm9T+yzPFGH98JVcoJT7JTk=" crossorigin="anonymous" referrerpolicy="no-referrer">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Spring til indholdet</a>
+
+<header class="topbar">
+  <a class="brand" href="#kort">
+    <span class="brand-emoji" aria-hidden="true">🍎</span>
+    <span class="brand-name">Frugt i Odense<span class="brand-rest"> og omegn</span></span>
+  </a>
+  <nav class="nav" aria-label="Hovedmenu">
+    <a href="#kort" data-view="kort">Kort</a>
+    <a href="#frugter" data-view="frugter">Frugter</a>
+    <a href="#guides" data-view="guides">Guides</a>
+    <a href="#om" data-view="om">Om</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ============================ KORT ============================ -->
+  <section class="view view-kort" id="view-kort">
+
+    <div class="filterbar" role="group" aria-label="Filtrér efter frugt">
+      <button type="button" class="fchip fchip-all is-on" data-kat="alle">
+        <span class="fchip-emoji" aria-hidden="true">🧺</span>Alle
+      </button>
+      <span id="kategori-chips" class="contents"></span>
+    </div>
+
+    <div class="mapwrap">
+      <div id="map" role="application" aria-label="Kort over frugtsteder"></div>
+
+      <div class="mapctl">
+        <button type="button" id="btn-her" class="mapbtn">
+          <span aria-hidden="true">◎</span> Min placering
+        </button>
+        <button type="button" id="btn-foelg" class="mapbtn" aria-pressed="false">
+          <span aria-hidden="true">◎</span> Følg mig
+        </button>
+      </div>
+
+      <p class="geomsg" id="geomsg" role="status" aria-live="polite" hidden></p>
+    </div>
+
+    <div class="listhead">
+      <h2 id="listtitel">Steder</h2>
+      <div class="sortbox">
+        <label for="sortering" class="visually-hidden">Sortering</label>
+        <select id="sortering">
+          <option value="kategori">Efter frugt</option>
+          <option value="navn">Efter navn</option>
+          <option value="afstand" disabled>Nærmest mig</option>
+        </select>
+      </div>
+    </div>
+    <p class="hint" id="afstand-hint">Slå <strong>Min placering</strong> til for at se afstande og sortere efter, hvad der er tættest på.</p>
+
+    <ul class="stedliste" id="stedliste"></ul>
+    <p class="tom" id="tom" hidden>Ingen steder i det valgte filter.</p>
+  </section>
+
+  <!-- =========================== FRUGTER =========================== -->
+  <section class="view view-tekst" id="view-frugter" hidden>
+    <h1>Frugter</h1>
+    <p class="lead">Hvad der er kortlagt, og hvor meget af det. Tryk på en frugt for at se den alene på kortet.</p>
+    <ul class="frugtliste" id="frugtliste"></ul>
+    <p class="kildenote" id="kildenote"></p>
+  </section>
+
+  <!-- =========================== GUIDES ============================ -->
+  <section class="view view-tekst" id="view-guides" hidden>
+    <h1>Guides</h1>
+    <p class="lead">Fem korte ting at vide, før du plukker.</p>
+
+    <article class="guide">
+      <h2>Må jeg plukke det?</h2>
+      <p>Det første spørgsmål er ikke, om der hænger frugt. Det er, om du må tage den.</p>
+      <p>At et areal ser offentligt ud, betyder ikke, at alt hvad der gror på det, er frit. Adgangsreglerne er forskellige for kommunale arealer, statsskove, private skove, veje og markskel — og et træ, der hænger ud over et fortov, kan sagtens stå i en privat have.</p>
+      <p>Man hører tit, at man må tage, hvad man kan bære i sin hat. Udtrykket er gammelt og forbindes med middelalderlig dansk ret, men det er en historisk kuriositet — ikke en regel, du kan læne dig op ad i dag.</p>
+      <p class="regel">Er du i tvivl, så lad være med at plukke.</p>
+    </article>
+
+    <article class="guide">
+      <h2>Er det sikkert?</h2>
+      <p>Du skal kunne kende det, du spiser. Æbler og pærer er til at have med at gøre — de ligner ikke noget farligt. Andre planter gør.</p>
+      <p><strong>Hyld</strong> er værd at være omhyggelig med: bærrene skal koges, og hyld kan forveksles med andre skærm- og bærbærende planter. <strong>Ramsløg</strong> er det klassiske eksempel: bladene ligner liljekonval og høsttidløs, som begge er giftige, og de gror ofte samme sted. Lugten af hvidløg er et fingerpeg, men den sætter sig i fingrene, så den er ikke et bevis i sig selv.</p>
+      <p>Brug en ordentlig flora eller en pålidelig artsbestemmelse, og få hellere en, der kan det, til at se på det første gang.</p>
+      <p class="regel">Spis aldrig en plante, du ikke med sikkerhed kan identificere.</p>
+    </article>
+
+    <article class="guide">
+      <h2>Er det lækkert?</h2>
+      <p>Spiselig og lækker er to forskellige spørgsmål.</p>
+      <p>Frugt fra gamle eller ukendte træer svinger enormt. Æbler kan være søde, syrlige, bitre eller melede — nogle er fremragende at spise i hånden, andre er kun til grød, most eller kage. Det siger heller ikke sig selv fra år til år: vejret, træets alder og hvornår du kommer forbi, betyder alt sammen noget.</p>
+      <p>Smag et enkelt, før du fylder posen. Resten er din egen vurdering.</p>
+    </article>
+
+    <article class="guide">
+      <h2>Er det indsatsen værd?</h2>
+      <p>Noget frugt giver mere igen end andet.</p>
+      <p><strong>Æbler</strong> er den sikre gevinst: de tåler at blive transporteret, de kan ligge køligt i ugevis, og de kan bruges til næsten alt — spist som de er, most, mos, grød, kage, tørret.</p>
+      <p>Bær og blød frugt er sværere. De skal helst hjem samme dag, de mases i posen, og de holder ikke af sig selv. Har du taget mere med hjem, end du kan nå at spise, er <strong>frost</strong> den nemmeste udvej — de fleste bær kan fryses direkte og bruges hen over vinteren.</p>
+    </article>
+
+    <article class="guide">
+      <h2>Pluk uden at ødelægge</h2>
+      <p>Stedet skal helst kunne bruges igen næste år — af dig og af andre.</p>
+      <ul>
+        <li>Knæk ikke grene for at nå frugten.</li>
+        <li>Lad være med at rive skud og knopper af i forbifarten.</li>
+        <li>Ødelæg ikke planten for at høste af den.</li>
+        <li>Tramp ikke rundt i det, der gror udenom.</li>
+        <li>Lad rødder og løg blive i jorden.</li>
+      </ul>
+      <p>For ramsløg gælder det særligt: du høster bladene, ikke planten.</p>
+      <p class="regel">Riv ikke planten op med roden.</p>
+    </article>
+  </section>
+
+  <!-- ============================= OM ============================== -->
+  <section class="view view-tekst" id="view-om" hidden>
+    <h1>Om</h1>
+    <p class="stort">Hvis Fyn er Danmarks have, er Odense <em>The Big Apple</em>.</p>
+    <p>Ringvejen har form som et æble, og rundt omkring i byen står der frugttræer og andre spiselige planter på offentligt tilgængelige arealer. Dette website forsøger at gøre nogle af dem synlige.</p>
+
+    <h2>Hvad kortet er — og ikke er</h2>
+    <p>Kortet er <strong>ikke</strong> et officielt register, og det er på ingen måde dækkende. Det er et udvalg af steder, som er blevet fundet interessante, samlet i et Google-kort over tid.</p>
+    <p>Odense Kommune har også et større kort over spiselige planter og frugttræer, som blandt andet dækker den vestlige del af byen bedre end dette.</p>
+    <p>Anbefalingerne er uden garanti. Du har selv ansvaret for at kontrollere, at du befinder dig et sted, hvor det er tilladt at opholde sig og plukke. Er du i tvivl, så lad være med at plukke.</p>
+
+    <h2>Din placering</h2>
+    <p>Du kan lade kortet vise, hvor du er, så du kan se, hvad der er tættest på. Det er helt frivilligt — kortet virker uden.</p>
+    <p>Placeringen kommer fra din browsers indbyggede funktion og bliver kun brugt i din egen telefon eller computer: til at sætte prikken på kortet og til at regne afstande ud. Den bliver ikke sendt videre, ikke gemt og ikke delt. Der er ingen brugerkonti og ingen database over, hvem der har været hvor.</p>
+
+    <h2>Data</h2>
+    <p id="om-kilde"></p>
+    <p>Websitet er statisk: et kort, en JSON-fil og lidt JavaScript. Kortbaggrunden kommer fra <a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap</a>, og kortet tegnes med <a href="https://leafletjs.com/" rel="noopener">Leaflet</a>.</p>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Frugt i Odense og omegn · Anbefalingerne er uden garanti · <a href="#om">Om projektet</a></p>
+</footer>
+
+<noscript>
+  <p class="noscript">Kortet kræver JavaScript. Uden det kan du stadig hente rådataene i <a href="data/locations.json">data/locations.json</a>.</p>
+</noscript>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"
+        integrity="sha256-XJrs/DDkVkUZ29zdzFOkGCJ9zHVo5hnpdi3c7HYJ7Uc=" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

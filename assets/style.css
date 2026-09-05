@@ -1,0 +1,265 @@
+/* Frugt i Odense og omegn — mobilførst.
+   Sitet bruges udendørs med én hånd, så: store tryk-mål, høj kontrast,
+   kortet fylder skærmen, og ingen pynt der stjæler plads. */
+
+:root {
+  --aeble: #8f2d1e;          /* æblerød — sitets signaturfarve */
+  --aeble-lys: #fdeeea;
+  --blad: #4e7a2f;
+  --ink: #1c1a17;
+  --ink-soft: #57534c;
+  --ink-faint: #857f76;
+  --bg: #fdfcfa;
+  --flade: #ffffff;
+  --linje: #e6e1d8;
+  --mig: #1266d6;            /* brugerens placering — aldrig frugtfarven */
+  --radius: 12px;
+  --skygge: 0 1px 2px rgba(28, 26, 23, .08), 0 8px 24px rgba(28, 26, 23, .07);
+  --top: 52px;
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --serif: Georgia, "Iowan Old Style", "Times New Roman", serif;
+}
+
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 16px/1.6 var(--font);
+  -webkit-text-size-adjust: 100%;
+  overflow-wrap: break-word;
+}
+
+h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.25; }
+
+a { color: var(--aeble); }
+
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap;
+}
+.skip { position: absolute; left: -9999px; }
+.skip:focus {
+  left: 0; top: 0; z-index: 2000; background: var(--aeble); color: #fff;
+  padding: 12px 18px; border-radius: 0 0 var(--radius) 0;
+}
+:focus-visible { outline: 3px solid var(--mig); outline-offset: 2px; }
+
+/* ---------------- topbar ---------------- */
+
+.topbar {
+  position: sticky; top: 0; z-index: 900;
+  height: var(--top);
+  display: flex; align-items: center; justify-content: space-between; gap: 8px;
+  padding: 0 12px;
+  background: var(--flade);
+  border-bottom: 1px solid var(--linje);
+}
+.brand {
+  display: flex; align-items: center; gap: 7px;
+  text-decoration: none; color: var(--ink); font-weight: 700;
+  font-size: 16px; letter-spacing: -.01em; white-space: nowrap;
+}
+.brand-emoji { font-size: 20px; }
+.nav { display: flex; gap: 2px; }
+.nav a {
+  display: block; padding: 7px 11px; border-radius: 100px;
+  text-decoration: none; color: var(--ink-soft); font-size: 15px;
+}
+.nav a.is-on { background: var(--aeble-lys); color: var(--aeble); font-weight: 600; }
+
+@media (max-width: 430px) {
+  .brand-rest { display: none; }
+  .nav a { padding: 7px 9px; font-size: 14px; }
+}
+
+/* ---------------- kortvisning ---------------- */
+
+.view[hidden] { display: none; }
+.contents { display: contents; }
+
+.filterbar {
+  display: flex; gap: 7px; align-items: center;
+  padding: 9px 12px;
+  overflow-x: auto; -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  background: var(--flade); border-bottom: 1px solid var(--linje);
+}
+.filterbar::-webkit-scrollbar { display: none; }
+
+.fchip {
+  flex: none;
+  display: inline-flex; align-items: center; gap: 6px;
+  min-height: 38px; padding: 6px 14px;
+  font: inherit; font-size: 15px; color: var(--ink-soft);
+  background: var(--bg); border: 1px solid var(--linje); border-radius: 100px;
+  cursor: pointer; white-space: nowrap;
+}
+.fchip-emoji { font-size: 17px; line-height: 1; }
+.fchip.is-on {
+  background: var(--aeble-lys); border-color: var(--aeble);
+  color: var(--aeble); font-weight: 600;
+}
+.fchip-tal { font-size: 13px; color: var(--ink-faint); font-variant-numeric: tabular-nums; }
+.fchip.is-on .fchip-tal { color: var(--aeble); }
+
+.mapwrap { position: relative; }
+#map {
+  height: 62vh; min-height: 300px;
+  background: #e8e4dc;
+  z-index: 1;
+}
+
+.mapctl {
+  position: absolute; z-index: 500;
+  left: 10px; bottom: 22px;
+  display: flex; flex-direction: column; gap: 8px; align-items: flex-start;
+}
+.mapbtn {
+  display: inline-flex; align-items: center; gap: 7px;
+  min-height: 44px; padding: 10px 16px;
+  font: inherit; font-size: 15px; font-weight: 600; color: var(--ink);
+  background: var(--flade); border: 1px solid var(--linje);
+  border-radius: 100px; box-shadow: var(--skygge); cursor: pointer;
+}
+.mapbtn[aria-pressed="true"], .mapbtn.is-on {
+  background: var(--mig); border-color: var(--mig); color: #fff;
+}
+.mapbtn[disabled] { opacity: .55; cursor: default; }
+
+.geomsg {
+  position: absolute; z-index: 500; left: 10px; right: 10px; top: 10px;
+  margin: 0; padding: 11px 14px;
+  font-size: 14px; line-height: 1.45;
+  background: var(--flade); border-left: 4px solid var(--aeble);
+  border-radius: var(--radius); box-shadow: var(--skygge);
+}
+
+/* leaflet-tilpasninger */
+.leaflet-container { font: inherit; }
+.leaflet-popup-content { margin: 13px 15px; font: inherit; }
+.leaflet-popup-content h3 { margin: 0 0 3px; font-size: 17px; }
+.leaflet-bar a { line-height: 30px; }
+
+.pin { background: none; border: none; }
+.pin-emoji {
+  display: block; width: 30px; height: 30px; line-height: 30px;
+  font-size: 20px; text-align: center;
+  background: rgba(255, 255, 255, .93);
+  border-radius: 50%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .35);
+}
+.pin-linje .pin-emoji { border-radius: 8px; }
+
+.mig-prik {
+  width: 18px; height: 18px; border-radius: 50%;
+  background: var(--mig); border: 3px solid #fff;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, .25);
+}
+
+.pop-emoji { font-size: 19px; }
+.pop-kat { margin: 0; font-size: 13px; color: var(--ink-faint); }
+.pop-desc { margin: 7px 0 0; font-size: 14.5px; color: var(--ink-soft); }
+.pop-afstand { margin: 7px 0 0; font-size: 14px; font-weight: 600; color: var(--mig); }
+
+/* ---------------- listen under kortet ---------------- */
+
+.listhead {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 18px 14px 8px; max-width: 760px; margin: 0 auto;
+}
+.listhead h2 { margin: 0; font-size: 19px; }
+#sortering {
+  font: inherit; font-size: 15px; color: var(--ink);
+  background: var(--flade); border: 1px solid var(--linje);
+  border-radius: 100px; padding: 9px 12px; min-height: 42px;
+}
+
+.hint {
+  max-width: 760px; margin: 0 auto; padding: 0 14px 4px;
+  font-size: 14px; color: var(--ink-faint);
+}
+
+.stedliste { list-style: none; margin: 0 auto 32px; padding: 8px 14px 0; max-width: 760px; }
+.sted {
+  display: flex; gap: 12px; align-items: flex-start;
+  width: 100%; text-align: left;
+  padding: 13px 14px; margin-bottom: 8px;
+  background: var(--flade); border: 1px solid var(--linje);
+  border-radius: var(--radius); font: inherit; color: inherit; cursor: pointer;
+}
+.sted:hover { border-color: var(--aeble); }
+.sted-emoji { font-size: 24px; line-height: 1.15; flex: none; }
+.sted-krop { min-width: 0; flex: 1; }
+.sted-navn { display: block; font-weight: 600; font-size: 15.5px; }
+.sted-desc {
+  display: block; font-size: 14px; color: var(--ink-soft); margin-top: 2px;
+  overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+}
+.sted-meta { display: block; font-size: 13px; color: var(--ink-faint); margin-top: 3px; }
+.sted-afstand { color: var(--mig); font-weight: 600; font-variant-numeric: tabular-nums; }
+
+.tom, .kildenote { max-width: 760px; margin: 0 auto; padding: 0 14px 32px; color: var(--ink-soft); }
+.kildenote { font-size: 14px; color: var(--ink-faint); padding-top: 8px; }
+
+/* ---------------- tekstsider ---------------- */
+
+.view-tekst { max-width: 680px; margin: 0 auto; padding: 22px 16px 48px; }
+.view-tekst h1 { font-size: 27px; margin: 4px 0 10px; }
+.view-tekst h2 { font-size: 20px; margin: 30px 0 8px; }
+.view-tekst p { margin: 0 0 14px; }
+.lead { font-size: 17px; color: var(--ink-soft); margin-bottom: 22px !important; }
+.stort { font-size: 20px; font-family: var(--serif); }
+
+.guide {
+  background: var(--flade); border: 1px solid var(--linje);
+  border-radius: var(--radius); padding: 18px 18px 6px; margin-bottom: 16px;
+}
+.guide h2 { margin: 0 0 10px; font-size: 19px; }
+.guide ul { margin: 0 0 14px; padding-left: 20px; }
+.guide li { margin-bottom: 5px; }
+.regel {
+  font-weight: 600; color: var(--aeble);
+  background: var(--aeble-lys); border-radius: var(--radius);
+  padding: 12px 14px; margin: 16px 0 14px !important;
+}
+
+.frugtliste { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.frugt {
+  display: flex; align-items: center; gap: 14px; width: 100%; text-align: left;
+  padding: 14px 16px; min-height: 62px;
+  background: var(--flade); border: 1px solid var(--linje);
+  border-radius: var(--radius); font: inherit; color: inherit; cursor: pointer;
+}
+.frugt:hover { border-color: var(--aeble); }
+.frugt-emoji { font-size: 30px; line-height: 1; flex: none; }
+.frugt-navn { font-weight: 600; font-size: 16.5px; display: block; }
+.frugt-antal { font-size: 14px; color: var(--ink-faint); }
+.frugt-pil { margin-left: auto; color: var(--ink-faint); font-size: 20px; }
+
+/* ---------------- bund ---------------- */
+
+.footer {
+  border-top: 1px solid var(--linje); background: var(--flade);
+  padding: 18px 16px calc(18px + env(safe-area-inset-bottom));
+  font-size: 13.5px; color: var(--ink-faint); text-align: center;
+}
+.footer p { margin: 0; }
+.noscript { padding: 16px; margin: 0; background: var(--aeble-lys); }
+
+/* ---------------- desktop ---------------- */
+
+@media (min-width: 800px) {
+  :root { --top: 58px; }
+  .topbar { padding: 0 24px; }
+  .brand { font-size: 18px; }
+  /* Filterbaren skal blive én række, så kortets højde er til at regne ud
+     og placeringsknapperne aldrig havner under skærmkanten. */
+  .filterbar { padding: 12px 24px; justify-content: center; }
+  #map { height: calc(100vh - var(--top) - 63px); min-height: 460px; }
+  .mapctl { left: auto; right: 14px; bottom: 30px; align-items: flex-end; }
+  .stedliste { padding-top: 8px; display: grid; gap: 10px; grid-template-columns: 1fr 1fr; max-width: 1000px; }
+  .sted { margin-bottom: 0; }
+  .listhead, .hint, .tom { max-width: 1000px; }
+}

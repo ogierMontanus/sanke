@@ -1,0 +1,1095 @@
+{
+ "kilde": {
+  "navn": "sankesteder odense",
+  "beskrivelse": "Gratis frugt på offentlige arealer i Odense. Vi er især interesserede i æbler. Læs mere om kortlægningen og lær, hvordan du kan bidrage på websitet for foreningen Gro Odense Byhaver: www.gro-odense.dk/frugt God fornøjelse!",
+  "fil": "legacy/sankesteder odense.kmz",
+  "kort": "https://www.google.com/maps/d/u/0/viewer?hl=da&mid=1_CKAv9kG5AE8ovzdb8dSOD524jkJopmK",
+  "genereret_af": "scripts/convert-kmz.py"
+ },
+ "kategorier": [
+  {
+   "id": "aebler",
+   "navn": "Æbler",
+   "kildenavn": "Æbler",
+   "emoji": "🍎",
+   "antal": 46
+  },
+  {
+   "id": "hasselnoedder",
+   "navn": "Hasselnødder",
+   "kildenavn": "Hasselnødder",
+   "emoji": "🌰",
+   "antal": 13
+  },
+  {
+   "id": "hyldeblomst",
+   "navn": "Hyldeblomst",
+   "kildenavn": "Hyldeblomst / Elderberry",
+   "emoji": "🌸",
+   "antal": 13
+  },
+  {
+   "id": "baer",
+   "navn": "Bær",
+   "kildenavn": "Bær / berries",
+   "emoji": "🫐",
+   "antal": 13
+  },
+  {
+   "id": "paerer",
+   "navn": "Pærer",
+   "kildenavn": "Pærer",
+   "emoji": "🍐",
+   "antal": 8
+  },
+  {
+   "id": "kirsebaer",
+   "navn": "Kirsebær",
+   "kildenavn": "Kirsebær",
+   "emoji": "🍒",
+   "antal": 3
+  },
+  {
+   "id": "ramsloeg",
+   "navn": "Ramsløg",
+   "kildenavn": "Ramsløg / Wild garlic",
+   "emoji": "🌿",
+   "antal": 3
+  },
+  {
+   "id": "andet-spiseligt",
+   "navn": "Andet spiseligt",
+   "kildenavn": "Andet frugt og grønt / other edible plants",
+   "emoji": "🌱",
+   "antal": 1
+  }
+ ],
+ "steder": [
+  {
+   "id": "p001",
+   "navn": "Æbler, pære og hasselnødder",
+   "kategori": "aebler",
+   "lat": 55.3998313,
+   "lon": 10.4021668,
+   "geometri": "punkt"
+  },
+  {
+   "id": "p002",
+   "navn": "Æbler, hindbær, stikkelsbær",
+   "kategori": "aebler",
+   "lat": 55.3980148,
+   "lon": 10.4021323,
+   "geometri": "punkt"
+  },
+  {
+   "id": "p003",
+   "navn": "Æbler",
+   "kategori": "aebler",
+   "lat": 55.3985715,
+   "lon": 10.4145201,
+   "geometri": "punkt"
+  },
+  {
+   "id": "p004",
+   "navn": "Æbler",
+   "kategori": "aebler",
+   "lat": 55.3870769,
+   "lon": 10.4050277,
+   "geometri": "punkt",
+   "beskrivelse": "På engen står mange træer med sommeræbler. Ned mod plejehjemmet står den sene, lækre sort Cox Orange. Træerne ved 4. Maj Kollegiet er på privat ejendom, men kollegiets beboere er vist ikke fans af nedfaldsæbler, så..."
+  },
+  {
+   "id": "p005",
+   "navn": "Æbler (ingrid marie), pærer",
+   "kategori": "aebler",
+   "lat": 55.3858119,
+   "lon": 10.4046535,
+   "geometri": "punkt"
+  },
+  {
+   "id": "p006",
+   "navn": "Æbler (ingrid marie)",
+   "kategori": "aebler",
+   "lat": 55.386667,
+   "lon": 10.4038227,
+   "geometri": "punkt",
+   "beskrivelse": "Lille træ med meget lækre æbler. Længere nede ad vejen madæbletræ. Træerne ved P-pladsen hører til kirken, så lad helst være med at samle og plukke af dem"
+  },
+  {
+   "id": "p007",
+   "navn": "Æbler",
+   "kategori": "aebler",
+   "lat": 55.3887472,
+   "lon": 10.4061098,
+   "geometri": "punkt"
+  },
+  {
+   "id": "p008",
+   "navn": "Æbler",
+   "kategori": "aebler",
+   "lat": 55.3892145,
+   "lon": 10.4067971,
+   "geometri": "punkt"
+  },
+  {
+   "id": "p009",
+   "navn": "Æbler",
+   "kategori": "aebler",
+   "lat": 55.3923742,
+   "lon": 10.3955508,
+   "geometri": "punkt",
+   "beskrivelse": "To æbletræer ved den skønne byhave ved Bordals Alle. Syrlige og store æbler"
+  },
+  {
+   "id": "p010",
+   "navn": "Æbler",
+   "kategori": "aebler",
+   "lat": 55.4171197,
+   "lon": 10.4103874,
+   "geometri": "punkt",
+   "beskrivelse": "Æbletræ"
+  },
+  {
+   "id": "p011",
+   "navn": "Madæbler på højt træ",
+   "kategori": "aebler",
+   "lat": 55.3968243,
+   "lon": 10.4075922,
+   "geometri": "punkt"
+  },
+  {
+   "id": "p012",
+   "navn": "Madæbler i hundelofterskovens hjørne mod sydvest",
+   "kategori": "aebler",
+   "lat": 55.3969572,
+   "lon": 10.408185,
+   "geometri": "punkt"
+  },
+  {
+   "id": "p013",
+   "navn": "Flere æbletræer og tavle om æblets kulturhistorie. Der er også flotte skulpturer fra Hollufgård",
+   "kategori": "aebler",
+   "lat": 55.3546454,
+   "lon": 10.4398324,
+   "geometri": "punkt"
+  },
+  {
+   "id": "p014",
+   "navn": "Sommeræbeltræ ved Hollufgårds hovedbygninh",
+   "kategori": "aebler",
+   "lat": 55.3541778,
+   "lon": 10.4402783,
+   "geometri": "punkt"
+  },
+  {
+   "id": "p015",
+   "navn": "Æbletræ med madæbler lige syd for plejehjemmet. Der er adgang fra cykelstien. Træet er stort og lavt, så man kan klatre og plukke meget",
+   "kategori": "aebler",
+   "lat": 55.3864417,
+   "lon": 10.4055424,
+   "geometri": "punkt"
+  },
+  {
+   "id": "p016",
+   "navn": "Æblealleen",
+   "kategori": "aebler",
+   "lat": 55.3678773,
+   "lon": 10.4126593,
+   "geometri": "punkt",
+   "beskrivelse": "Markvej sydvest for Forskerparken. Det er en fin artikel om alleens historie i Odense Leksikon https://odenseleksikon.wordpress.com/steder/aeblealleen/"
+  },
+  {
+   "id": "p017",
+   "navn": "Æblealleen",
+   "kategori": "aebler",
+   "lat": 55.3631209,
+   "lon": 10.420892,
+   "geometri": "punkt"
+  },
+  {
+   "id": "p018",
+   "navn": "Æbletræer, også i plukkehøjde",
+   "kategori": "aebler",
+   "lat": 55.385392,
+   "lon": 10.372116,
+   "geometri": "punkt"
+  },
+  {
+   "id": "p019",
+   "navn": "Æbletræ",
+   "kategori": "aebler",
+   "lat": 55.370131,
+   "lon": 10.433754,
+   "geometri": "punkt"
+  },
+  {
+   "id": "p020",
+   "navn": "Æbletræer",
+   "kategori": "aebler",
+   "lat": 55.4221249,
+   "lon": 10.4047518,
+   "geometri": "punkt"
+  },
+  {
+   "id": "p021",
+   "navn": "Frugteng",
+   "kategori": "aebler",
+   "lat": 55.4296021,
+   "lon": 10.3250674,
+   "geometri": "punkt",
+   "beskrivelse": "Nær Store Klaus kan du finde en frugtlund, der lige er blevet plantet (efterår 2018), hvor du må plukke til eget forbrug, når frugterne er i sæson (fra Odense Rundt)"
+  },
+  {
+   "id": "p022",
+   "navn": "Æbletræer på cirkuspladsen. der er plantet tre forskellige sorter æbletræer.",
+   "kategori": "aebler",
+   "lat": 55.3967831,
+   "lon": 10.3539558,
+   "geometri": "punkt"
+  },
+  {
+   "id": "p023",
+   "navn": "Christen Kolds Vej, kan du finde fire æbletræer, som du gerne må plukke af til eget forbrug, når de er i sæson",
+   "kategori": "aebler",
+   "lat": 55.3985458,
+   "lon": 10.3612772,
+   "geometri": "linje",
+   "linje": [
+    [
+     55.3992718,
+     10.3595046
+    ],
+    [
+     55.3985458,
+     10.3612772
+    ]
+   ]
+  },
+  {
+   "id": "p024",
+   "navn": "Æbletræer",
+   "kategori": "aebler",
+   "lat": 55.424019,
+   "lon": 10.4001364,
+   "geometri": "punkt",
+   "beskrivelse": "På Windelsvej tæt ved Odins Bro, kan du i det levende hegn finde et lille æbletræ med velsmagende æbler, som du må plukke til eget forbrug.<br><br><br>På den modsatte side langs bakken, finder du en del fine æbletræer, som du gerne må plukke af til eget forbrug."
+  },
+  {
+   "id": "p025",
+   "navn": "Æbletræ",
+   "kategori": "aebler",
+   "lat": 55.4167318,
+   "lon": 10.4112659,
+   "geometri": "punkt",
+   "beskrivelse": "lysningen ved Sandhusvej og Bellisvej er det muligt at finde et meget gammelt æbletræ, der bærer frugt hvert år."
+  },
+  {
+   "id": "p026",
+   "navn": "Frugtlund plantet 2017",
+   "kategori": "aebler",
+   "lat": 55.3780033,
+   "lon": 10.4773216,
+   "geometri": "punkt",
+   "beskrivelse": "Frugttræslunden er plantet i 2017, så der går lige lidt tid, før det er muligt at plukke frugter (fra Odense Rundt)"
+  },
+  {
+   "id": "p027",
+   "navn": "Frugtlund plantet 2017",
+   "kategori": "aebler",
+   "lat": 55.3834055,
+   "lon": 10.3184299,
+   "geometri": "punkt",
+   "beskrivelse": "Lunden blev plantet i 2017, så der går lige lidt tid, før det er muligt at plukke frugterne. Fra Odense Rundt <br><br>I Elmelund Skov er der en frugttræslund, som du kan gå på opdagelse i og plukke de spiselige frugter"
+  },
+  {
+   "id": "p028",
+   "navn": "Æblealleen",
+   "kategori": "aebler",
+   "lat": 55.3635714,
+   "lon": 10.4200679,
+   "geometri": "linje",
+   "beskrivelse": "Markvej sydvest for Forskerparken. Det er en fin artikel om alleens historie i Odense Leksikon https://odenseleksikon.wordpress.com/steder/aeblealleen/",
+   "linje": [
+    [
+     55.368048,
+     10.4125527
+    ],
+    [
+     55.3635714,
+     10.4200679
+    ]
+   ]
+  },
+  {
+   "id": "p029",
+   "navn": "I Bjørnemosen er det muligt at plukke hassel samt frugt fra frugttræerne, når de er i sæson (fra Odense Rundt)",
+   "kategori": "aebler",
+   "lat": 55.3694574,
+   "lon": 10.4077438,
+   "geometri": "punkt"
+  },
+  {
+   "id": "p030",
+   "navn": "Efterårsæbletræ",
+   "kategori": "aebler",
+   "lat": 55.366876,
+   "lon": 10.4147668,
+   "geometri": "punkt",
+   "beskrivelse": "Efter mange madæbler møder mam her et træ med gode spiseæbler"
+  },
+  {
+   "id": "p031",
+   "navn": "Æbletræ",
+   "kategori": "aebler",
+   "lat": 55.3968859,
+   "lon": 10.4072412,
+   "geometri": "punkt",
+   "beskrivelse": "Enkelt æbletræ i Lommeparken, ret ungt (2020)"
+  },
+  {
+   "id": "p032",
+   "navn": "Æbletræ",
+   "kategori": "aebler",
+   "lat": 55.3849895,
+   "lon": 10.3980818,
+   "geometri": "punkt",
+   "beskrivelse": "Æbletræ bag st joseph kollegiet, sød efterårssort (ingrid marie?)"
+  },
+  {
+   "id": "p033",
+   "navn": "Æbletræ",
+   "kategori": "aebler",
+   "lat": 55.3857637,
+   "lon": 10.3875846,
+   "geometri": "punkt",
+   "beskrivelse": "Ved parkeringspladsen bag menighedshuset til Kingos Kirke. Synligt fra vejen, står i hegnet/skel"
+  },
+  {
+   "id": "p034",
+   "navn": "Æbletræ",
+   "kategori": "aebler",
+   "lat": 55.3779485,
+   "lon": 10.3828874,
+   "geometri": "punkt",
+   "beskrivelse": "Æbletræer på græsplænen ved vejen. Plukkehøjde"
+  },
+  {
+   "id": "p035",
+   "navn": "Æbletræer",
+   "kategori": "aebler",
+   "lat": 55.3814221,
+   "lon": 10.3937604,
+   "geometri": "punkt",
+   "beskrivelse": "Æbletræer ved græsplænen ud for Restaurant Knudsens Gård. Kokkene plukker dem ikke..."
+  },
+  {
+   "id": "p036",
+   "navn": "Æbletræ ved hjemmeværnets hus",
+   "kategori": "aebler",
+   "lat": 55.3979922,
+   "lon": 10.321961,
+   "geometri": "punkt"
+  },
+  {
+   "id": "p037",
+   "navn": "Æbletræer",
+   "kategori": "aebler",
+   "lat": 55.3702757,
+   "lon": 10.4329636,
+   "geometri": "punkt",
+   "beskrivelse": "Øst for sdu campus, ved beachvolleyball banen, langs asfalteret sti"
+  },
+  {
+   "id": "p038",
+   "navn": "Æbletræer",
+   "kategori": "aebler",
+   "lat": 55.3688216,
+   "lon": 10.4334075,
+   "geometri": "punkt",
+   "beskrivelse": "Øst for sdu campus, langs sydsiden af fodboldbane"
+  },
+  {
+   "id": "p039",
+   "navn": "Mirabeller",
+   "kategori": "aebler",
+   "lat": 55.3959463,
+   "lon": 10.4089139,
+   "geometri": "punkt"
+  },
+  {
+   "id": "p040",
+   "navn": "Mirabeller",
+   "kategori": "aebler",
+   "lat": 55.3966112,
+   "lon": 10.4142274,
+   "geometri": "punkt"
+  },
+  {
+   "id": "p041",
+   "navn": "Mirabeller",
+   "kategori": "aebler",
+   "lat": 55.3953351,
+   "lon": 10.4159369,
+   "geometri": "punkt",
+   "beskrivelse": "Ved fortovet, lidt højt til grenene så tag en stige med"
+  },
+  {
+   "id": "p042",
+   "navn": "Mirabeller",
+   "kategori": "aebler",
+   "lat": 55.3850958,
+   "lon": 10.4043712,
+   "geometri": "punkt"
+  },
+  {
+   "id": "p043",
+   "navn": "Mirabeller",
+   "kategori": "aebler",
+   "lat": 55.3780809,
+   "lon": 10.4086447,
+   "geometri": "punkt"
+  },
+  {
+   "id": "p044",
+   "navn": "Punktet 44",
+   "kategori": "aebler",
+   "lat": 55.4210663,
+   "lon": 10.4056768,
+   "geometri": "punkt"
+  },
+  {
+   "id": "p045",
+   "navn": "Æbletræer ved Rødegårdsvej på parkeringsplads foran firmaet Oliver Twist",
+   "kategori": "aebler",
+   "lat": 55.3815149,
+   "lon": 10.4205691,
+   "geometri": "punkt"
+  },
+  {
+   "id": "p046",
+   "navn": "Æbler",
+   "kategori": "aebler",
+   "lat": 55.3698708,
+   "lon": 10.42562,
+   "geometri": "punkt",
+   "beskrivelse": "Æblelund anlagt 2016 som markering af SDUs 50-års-jubilæum. Der kan plukkes uden stige. Bl.a. Ingrid Marie"
+  },
+  {
+   "id": "p047",
+   "navn": "Hasselnød",
+   "kategori": "hasselnoedder",
+   "lat": 55.3982431,
+   "lon": 10.4122362,
+   "geometri": "punkt"
+  },
+  {
+   "id": "p048",
+   "navn": "Hasselnødder",
+   "kategori": "hasselnoedder",
+   "lat": 55.395496,
+   "lon": 10.4036973,
+   "geometri": "punkt"
+  },
+  {
+   "id": "p049",
+   "navn": "Hasselnød i Lommeparken",
+   "kategori": "hasselnoedder",
+   "lat": 55.399707,
+   "lon": 10.4031589,
+   "geometri": "punkt"
+  },
+  {
+   "id": "p050",
+   "navn": "Hasselnødder i hegn",
+   "kategori": "hasselnoedder",
+   "lat": 55.3545121,
+   "lon": 10.4386764,
+   "geometri": "punkt"
+  },
+  {
+   "id": "p051",
+   "navn": "Stort valnøddetræ",
+   "kategori": "hasselnoedder",
+   "lat": 55.3549233,
+   "lon": 10.4413388,
+   "geometri": "punkt"
+  },
+  {
+   "id": "p052",
+   "navn": "Nødder langs åen",
+   "kategori": "hasselnoedder",
+   "lat": 55.3994917,
+   "lon": 10.4190932,
+   "geometri": "punkt"
+  },
+  {
+   "id": "p053",
+   "navn": "Hasselnødder",
+   "kategori": "hasselnoedder",
+   "lat": 55.3697445,
+   "lon": 10.4075047,
+   "geometri": "punkt",
+   "beskrivelse": "I Bjørnemosen er det muligt at plukke hassel samt frugt fra frugttræerne, når de er i sæson (fra Odense Rundt)"
+  },
+  {
+   "id": "p054",
+   "navn": "Valnøddetræ",
+   "kategori": "hasselnoedder",
+   "lat": 55.3789613,
+   "lon": 10.400308,
+   "geometri": "punkt",
+   "beskrivelse": "I Hinderuplundparken er det muligt at finde valnødetræer, hvor du kan plukke valnødderne, når de er i sæson (Odense Rundt)"
+  },
+  {
+   "id": "p055",
+   "navn": "Hasselnødder",
+   "kategori": "hasselnoedder",
+   "lat": 55.3769631,
+   "lon": 10.406228,
+   "geometri": "punkt",
+   "beskrivelse": "I Bramstrupparken er det muligt at finde tyrkisk hassel, som du kan plukke, når de er i sæson (Odense Rundt)"
+  },
+  {
+   "id": "p056",
+   "navn": "Valnøddetræ",
+   "kategori": "hasselnoedder",
+   "lat": 55.3816021,
+   "lon": 10.4081622,
+   "geometri": "punkt",
+   "beskrivelse": "På græsplænen ud mod ringvejen"
+  },
+  {
+   "id": "p057",
+   "navn": "Valnødetræ",
+   "kategori": "hasselnoedder",
+   "lat": 55.3828737,
+   "lon": 10.3835281,
+   "geometri": "punkt",
+   "beskrivelse": "Valnødetræ ud til fortovet"
+  },
+  {
+   "id": "p058",
+   "navn": "Valnøddetræ",
+   "kategori": "hasselnoedder",
+   "lat": 55.3821545,
+   "lon": 10.4144255,
+   "geometri": "punkt",
+   "beskrivelse": "Ved det tekniske gymnasium"
+  },
+  {
+   "id": "p059",
+   "navn": "Hasselnødder",
+   "kategori": "hasselnoedder",
+   "lat": 55.3999509,
+   "lon": 10.426415,
+   "geometri": "punkt",
+   "beskrivelse": "Indgang til lunden ad bagvejen, ved parcelhusene"
+  },
+  {
+   "id": "p060",
+   "navn": "Pæretræ sen sort, oktober",
+   "kategori": "paerer",
+   "lat": 55.3935854,
+   "lon": 10.3988898,
+   "geometri": "punkt"
+  },
+  {
+   "id": "p061",
+   "navn": "Pæretræer ved cykelstien",
+   "kategori": "paerer",
+   "lat": 55.403031,
+   "lon": 10.3971688,
+   "geometri": "punkt"
+  },
+  {
+   "id": "p062",
+   "navn": "Pæretræ i Lommeparken. Plus brombær",
+   "kategori": "paerer",
+   "lat": 55.4000118,
+   "lon": 10.4030553,
+   "geometri": "punkt"
+  },
+  {
+   "id": "p063",
+   "navn": "Pære",
+   "kategori": "paerer",
+   "lat": 55.392298,
+   "lon": 10.3958458,
+   "geometri": "punkt",
+   "beskrivelse": "Pæretræ i byhaven ved Bordals Alle. Sen sort"
+  },
+  {
+   "id": "p064",
+   "navn": "Fire pæretræer i parken ved Hollufgård",
+   "kategori": "paerer",
+   "lat": 55.3551688,
+   "lon": 10.441324,
+   "geometri": "punkt"
+  },
+  {
+   "id": "p065",
+   "navn": "Pæretræ",
+   "kategori": "paerer",
+   "lat": 55.3855725,
+   "lon": 10.3717046,
+   "geometri": "punkt",
+   "beskrivelse": "i plukkehøjde"
+  },
+  {
+   "id": "p066",
+   "navn": "Pæretr",
+   "kategori": "paerer",
+   "lat": 55.3858092,
+   "lon": 10.4048725,
+   "geometri": "punkt",
+   "beskrivelse": "To pæretræer. Tidlig moden. Tag gerne frugtplukker med."
+  },
+  {
+   "id": "p067",
+   "navn": "To pæretræer",
+   "kategori": "paerer",
+   "lat": 55.3969861,
+   "lon": 10.3987755,
+   "geometri": "punkt",
+   "beskrivelse": "Husk frugtplukker, tidlig moden"
+  },
+  {
+   "id": "p068",
+   "navn": "Kirsebær",
+   "kategori": "kirsebaer",
+   "lat": 55.3953762,
+   "lon": 10.4042948,
+   "geometri": "punkt"
+  },
+  {
+   "id": "p069",
+   "navn": "Kirsebær ved cykelstien",
+   "kategori": "kirsebaer",
+   "lat": 55.390465,
+   "lon": 10.4140601,
+   "geometri": "punkt"
+  },
+  {
+   "id": "p070",
+   "navn": "Kirsebær",
+   "kategori": "kirsebaer",
+   "lat": 55.3860052,
+   "lon": 10.4056258,
+   "geometri": "punkt",
+   "beskrivelse": "3-4 lave træer tæt på cykelstien"
+  },
+  {
+   "id": "p071",
+   "navn": "Hyldeblomst",
+   "kategori": "hyldeblomst",
+   "lat": 55.3977568,
+   "lon": 10.39751,
+   "geometri": "punkt",
+   "beskrivelse": "Husk en lille stige"
+  },
+  {
+   "id": "p072",
+   "navn": "Hyldeblomst",
+   "kategori": "hyldeblomst",
+   "lat": 55.3978969,
+   "lon": 10.4080784,
+   "geometri": "punkt"
+  },
+  {
+   "id": "p073",
+   "navn": "Hyldeblomst",
+   "kategori": "hyldeblomst",
+   "lat": 55.3968726,
+   "lon": 10.4131437,
+   "geometri": "punkt",
+   "beskrivelse": "Lige ved bænken ned til åen"
+  },
+  {
+   "id": "p074",
+   "navn": "Hyld",
+   "kategori": "hyldeblomst",
+   "lat": 55.398332,
+   "lon": 10.4110768,
+   "geometri": "punkt"
+  },
+  {
+   "id": "p075",
+   "navn": "Hyld",
+   "kategori": "hyldeblomst",
+   "lat": 55.407052,
+   "lon": 10.4045077,
+   "geometri": "punkt",
+   "beskrivelse": "Ved stien rundt om søen. Blomstrer sent"
+  },
+  {
+   "id": "p076",
+   "navn": "Hyld",
+   "kategori": "hyldeblomst",
+   "lat": 55.3995994,
+   "lon": 10.3913458,
+   "geometri": "punkt"
+  },
+  {
+   "id": "p077",
+   "navn": "Hyld",
+   "kategori": "hyldeblomst",
+   "lat": 55.3995587,
+   "lon": 10.4069012,
+   "geometri": "punkt",
+   "beskrivelse": "Vokser ret højt oppe"
+  },
+  {
+   "id": "p078",
+   "navn": "Hyldeblomst",
+   "kategori": "hyldeblomst",
+   "lat": 55.3985617,
+   "lon": 10.40891,
+   "geometri": "punkt",
+   "beskrivelse": "langs jomsborgvej hen mod parken"
+  },
+  {
+   "id": "p079",
+   "navn": "Hyld",
+   "kategori": "hyldeblomst",
+   "lat": 55.3982183,
+   "lon": 10.4025705,
+   "geometri": "punkt"
+  },
+  {
+   "id": "p080",
+   "navn": "Hyld",
+   "kategori": "hyldeblomst",
+   "lat": 55.3959395,
+   "lon": 10.4087375,
+   "geometri": "punkt",
+   "beskrivelse": "På stien ved åens sydlige bred"
+  },
+  {
+   "id": "p081",
+   "navn": "Hyld",
+   "kategori": "hyldeblomst",
+   "lat": 55.3952226,
+   "lon": 10.4072885,
+   "geometri": "punkt"
+  },
+  {
+   "id": "p082",
+   "navn": "Hyldebærtræer",
+   "kategori": "hyldeblomst",
+   "lat": 55.3882852,
+   "lon": 10.4107874,
+   "geometri": "punkt",
+   "beskrivelse": "Vokser langs cykelstien vest for Rødegårdsvej"
+  },
+  {
+   "id": "p083",
+   "navn": "Hyldeblomst",
+   "kategori": "hyldeblomst",
+   "lat": 55.3901643,
+   "lon": 10.4138931,
+   "geometri": "punkt",
+   "beskrivelse": "Hyldetræer ved hele cykelstien, også mellem Nyborgvej og Rødegårdsvej"
+  },
+  {
+   "id": "p084",
+   "navn": "Kvæder",
+   "kategori": "andet-spiseligt",
+   "lat": 55.3983661,
+   "lon": 10.4077984,
+   "geometri": "punkt",
+   "beskrivelse": "Japanske kvæder. De dufter godt, men er for små til at bruge i madlavningen"
+  },
+  {
+   "id": "p085",
+   "navn": "Ramsløg",
+   "kategori": "ramsloeg",
+   "lat": 55.4044395,
+   "lon": 10.366126,
+   "geometri": "punkt",
+   "beskrivelse": "Mellem jægerhusstien og skovbrynet"
+  },
+  {
+   "id": "p086",
+   "navn": "Ramsløg ved stien langs odense å",
+   "kategori": "ramsloeg",
+   "lat": 55.4078798,
+   "lon": 10.451607,
+   "geometri": "punkt"
+  },
+  {
+   "id": "p087",
+   "navn": "Ramsløg",
+   "kategori": "ramsloeg",
+   "lat": 55.3916437,
+   "lon": 10.4150132,
+   "geometri": "punkt"
+  },
+  {
+   "id": "p088",
+   "navn": "Brombær / blackberries",
+   "kategori": "baer",
+   "lat": 55.3981329,
+   "lon": 10.4125632,
+   "geometri": "punkt",
+   "beskrivelse": "Modner tidlig, der er masser af solskin"
+  },
+  {
+   "id": "p089",
+   "navn": "Forskellige bær / many types of berry",
+   "kategori": "baer",
+   "lat": 55.3980278,
+   "lon": 10.4014856,
+   "geometri": "punkt",
+   "beskrivelse": "Hindbær / raspberries / stikkelsbær med mere"
+  },
+  {
+   "id": "p090",
+   "navn": "Brombær",
+   "kategori": "baer",
+   "lat": 55.4006705,
+   "lon": 10.4330746,
+   "geometri": "punkt"
+  },
+  {
+   "id": "p091",
+   "navn": "Brombær",
+   "kategori": "baer",
+   "lat": 55.4067605,
+   "lon": 10.4048913,
+   "geometri": "punkt",
+   "beskrivelse": "På begge sider af søen"
+  },
+  {
+   "id": "p092",
+   "navn": "Brombær",
+   "kategori": "baer",
+   "lat": 55.4078054,
+   "lon": 10.4055913,
+   "geometri": "punkt",
+   "beskrivelse": "Stort buskads"
+  },
+  {
+   "id": "p093",
+   "navn": "Brombær / Blackberry",
+   "kategori": "baer",
+   "lat": 55.3959876,
+   "lon": 10.4085951,
+   "geometri": "punkt"
+  },
+  {
+   "id": "p094",
+   "navn": "Brombær / Blackberry",
+   "kategori": "baer",
+   "lat": 55.3952226,
+   "lon": 10.4072885,
+   "geometri": "punkt"
+  },
+  {
+   "id": "p095",
+   "navn": "Brombær",
+   "kategori": "baer",
+   "lat": 55.3975247,
+   "lon": 10.4068184,
+   "geometri": "punkt",
+   "beskrivelse": "Gå ind ad stien vestpå modsat hundelofterskoven"
+  },
+  {
+   "id": "p096",
+   "navn": "Brombær",
+   "kategori": "baer",
+   "lat": 55.4003811,
+   "lon": 10.4299729,
+   "geometri": "punkt",
+   "beskrivelse": "Stort område langs stien"
+  },
+  {
+   "id": "p097",
+   "navn": "Brombær",
+   "kategori": "baer",
+   "lat": 55.3858016,
+   "lon": 10.3740482,
+   "geometri": "punkt",
+   "beskrivelse": "Ved tunnelen / cykelstien hen mod fodboldbanerne"
+  },
+  {
+   "id": "p098",
+   "navn": "Bærbusk",
+   "kategori": "baer",
+   "lat": 55.3959853,
+   "lon": 10.4072412,
+   "geometri": "punkt",
+   "beskrivelse": "Bærbuske ved gyngen i Lommeparken"
+  },
+  {
+   "id": "p099",
+   "navn": "Brombær",
+   "kategori": "baer",
+   "lat": 55.3952412,
+   "lon": 10.4159249,
+   "geometri": "punkt"
+  },
+  {
+   "id": "p100",
+   "navn": "Brombær",
+   "kategori": "baer",
+   "lat": 55.3942126,
+   "lon": 10.4172693,
+   "geometri": "punkt",
+   "beskrivelse": "Ved hegnet ind til børnehavens legeplads"
+  }
+ ],
+ "dekoration": [
+  {
+   "navn": "Opdag hovedstaden i Danmarks frugthave",
+   "beskrivelse": "Fyn er Danmarks Frugthave, og Odense er øens Big Apple. Klik på emoji-frugterne og find grønne offentlige oaser med frugt og andet godt",
+   "farve": "#E65100",
+   "fyld": false,
+   "punkter": [
+    [
+     55.4219475,
+     10.3781711
+    ],
+    [
+     55.4238959,
+     10.361005
+    ],
+    [
+     55.4238959,
+     10.3520786
+    ],
+    [
+     55.4188298,
+     10.3424655
+    ],
+    [
+     55.4131785,
+     10.3393756
+    ],
+    [
+     55.4020682,
+     10.3404056
+    ],
+    [
+     55.3956346,
+     10.3397189
+    ],
+    [
+     55.382179,
+     10.3623782
+    ],
+    [
+     55.3813988,
+     10.3922473
+    ],
+    [
+     55.3817889,
+     10.4138767
+    ],
+    [
+     55.3880298,
+     10.424863
+    ],
+    [
+     55.3975843,
+     10.4241763
+    ],
+    [
+     55.4071364,
+     10.4252063
+    ],
+    [
+     55.4178555,
+     10.4207431
+    ],
+    [
+     55.4227268,
+     10.4125034
+    ],
+    [
+     55.4254545,
+     10.4049503
+    ],
+    [
+     55.4250649,
+     10.3949939
+    ],
+    [
+     55.4221423,
+     10.3846942
+    ],
+    [
+     55.4219475,
+     10.3781711
+    ]
+   ]
+  },
+  {
+   "navn": "Opdag hovedstaden i Danmarks frugthave",
+   "beskrivelse": "Fyn er Danmarks Frugthave, og Odense er øens Big Apple. Klik på emoji-frugterne og find grønne offentlige oaser med frugt og andet godt",
+   "farve": "#558B2F",
+   "fyld": true,
+   "punkter": [
+    [
+     55.4219475,
+     10.3781711
+    ],
+    [
+     55.4266959,
+     10.3774844
+    ],
+    [
+     55.4305922,
+     10.3778278
+    ],
+    [
+     55.4348776,
+     10.3740512
+    ],
+    [
+     55.431761,
+     10.3689014
+    ],
+    [
+     55.4270856,
+     10.3692447
+    ],
+    [
+     55.4219475,
+     10.3781711
+    ]
+   ]
+  },
+  {
+   "navn": "Opdag hovedstaden i Danmarks frugthave",
+   "beskrivelse": "Fyn er Danmarks Frugthave, og Odense er øens Big Apple. Klik på emoji-frugterne og find grønne offentlige oaser med frugt og andet godt",
+   "farve": "#558B2F",
+   "fyld": true,
+   "punkter": [
+    [
+     55.4219475,
+     10.3781711
+    ],
+    [
+     55.426303,
+     10.3867542
+    ],
+    [
+     55.4280563,
+     10.3939639
+    ],
+    [
+     55.4327316,
+     10.3936206
+    ],
+    [
+     55.4286408,
+     10.382291
+    ],
+    [
+     55.4219475,
+     10.3781711
+    ]
+   ]
+  }
+ ]
+}
