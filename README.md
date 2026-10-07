@@ -3,7 +3,7 @@
 Et kort over frugttræer og spiselige planter på offentligt tilgængelige
 arealer i Odense og omegn. Statisk website — HTML, CSS, lidt JavaScript og
 Leaflet. Ingen backend, ingen database, ingen brugerkonti.
-
+ogiermontanus.github.io/sanke 
 Hvis Fyn er Danmarks have, er Odense *The Big Apple*. Ringvejens æbleform er
 tegnet ind på kortet.
 
